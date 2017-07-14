@@ -27,10 +27,20 @@ react-native-swift
 ２．２．　　Podfileファイルを作成する。<br/>
 <code>$ cd `<ProjectRoot>/ios` && pod init</code>
 
-２．３．　　先ほどに作成したPodfileファイルに下記の内容を追加する。
+２．３．　　先ほどに作成したPodfileファイルに下記の内容を追加する。<br/>
 <code>
-target '<ProjectName>' do
+target `<ProjectName>` do
+pod 'React', :path => './../node_modules/react-native', :subspecs => [
+'Core',
+]
+
+pod "Yoga", :path => "./../node_modules/react-native/ReactCommon/yoga"
+end
 </code>
+
+２．４．　　pod installを実行する。<br/>
+<code>$ cd `<ProjectRoot>/ios` && pod install</code>
+
 
 
 
