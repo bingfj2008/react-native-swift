@@ -7,10 +7,20 @@ react-native-swift
 
 １．１．　　　CocoaPodsのインストール<br/>
 １．１．１．　ruby gemを最新化にする。<br/>
-<code>sudo gem update --system</code>
+    <code>sudo gem update --system</code>
     
 １．１．２．　Cocoaをインストールする。<br/>
-<code>sudo gem install -n /usr/local/bin cocoapods</code>
-    
+    <code>sudo gem install -n /usr/local/bin cocoapods</code>
+
 １．１．３．　セットアップ。<br/>
-<code>pod setup</code>
+    <code>pod setup</code>
+
+
+
+
+
+
+参考：<br/>
+-----------------------------------------------------------------------<br/>
+１．iOSライブラリ管理ツール「CocoaPods」の使用方法<br/>
+    <link>http://qiita.com/satoken0417/items/479bcdf91cff2634ffb1</link>
