@@ -29,24 +29,32 @@ react-native-swift
 
 ２．３．　　先ほどに作成したPodfileファイルに下記の内容を追加する。<br/>
 <code>
-target `<ProjectName>` do
-pod 'React', :path => './../node_modules/react-native', :subspecs => [
-'Core',
-]
+target 'RNSwiftAppDemo' do
+  # Pods for RNSwiftAppDemo
+  pod 'React', :path => './../node_modules/react-native', :subspecs => [
+    'Core',
+    'RCTWebSocket',
+    # ...add modules name
+  ]
 
-pod "Yoga", :path => "./../node_modules/react-native/ReactCommon/yoga"
+  pod "Yoga", :path => "./../node_modules/react-native/ReactCommon/yoga"
+  # ...add pods name
 end
 </code>
 
 ２．４．　　pod installを実行する。<br/>
 <code>$ cd `<ProjectRoot>/ios` && pod install</code>
 
+２．５．　　`<ProjectRoot>/ios/<ProjectName>`のディレクトリにAppDelegate.swiftファイルを追加
 
+２．６．    要らないものを削除する。
 
-
-
+２．７．    プロジェクトを起動する。（`<ProjectName>.xcworkspace`で、XCODEを起動しなさい。）
 
 参考：<br/>
 -----------------------------------------------------------------------<br/>
-１．iOSライブラリ管理ツール「CocoaPods」の使用方法<br/>
-    <link>http://qiita.com/satoken0417/items/479bcdf91cff2634ffb1</link>
+１．iOSライブラリ管理ツール「CocoaPods」の使用方法 →　<link>http://qiita.com/satoken0417/items/479bcdf91cff2634ffb1</link>
+<br/>
+２．ReactNative-Cocoapods-Swift-Project →　<link>http://blog.csdn.net/u011690583/article/details/51700662</link>
+<br/>
+３．ReactNative调用iOS(Swift)原生方法 →　<link>http://www.jianshu.com/p/4ec889232766</link>
