@@ -7,13 +7,18 @@ react-native-swift
 
 １．１．　　　CocoaPodsのインストール<br/>
 １．１．１．　ruby gemを最新化にする。<br/>
-    <code>sudo gem update --system</code>
+    <code>$ sudo gem update --system</code>
     
 １．１．２．　Cocoaをインストールする。<br/>
-    <code>sudo gem install -n /usr/local/bin cocoapods</code>
+    <code>$ sudo gem install -n /usr/local/bin cocoapods</code>
 
 １．１．３．　セットアップ。<br/>
-    <code>pod setup</code>
+    <code>$ pod setup</code>
+
+
+２．REACT-NATIVEプロジェクトの作成<br/>
+２．１．　　　REACT-NATIVEプロジェクトを作成<br/>
+    <code>$ cd `<WorkspaceRoot>` && react-native init `<ProjectName>`</code>
 
 
 
